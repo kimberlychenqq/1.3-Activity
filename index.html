@@ -30,7 +30,7 @@
 		<form>
 			<label for="first-name">First Name</label>
 			<input type="text" id="first-name" name="first" required>
-			<label for="last-name">First Name</label>
+			<label for="last-name">Last Name</label>
 			<input type="text" id="last-name"name="last" required>
 			<label for="user-email">Email</label>
 			<input type="email" id="user-email"name="email" required>
@@ -38,14 +38,14 @@
 			<input type="phone" id="user-phone" name="phone" required>
 			<fieldset>
 				<legend>Preferred Contact Method</legend>
-				<input type="radio" id="p-phone" value="phone" required>
+				<input type="radio" id="p-phone" name="contact-method" value="phone" required>
 				<label for="p-phone">Phone</label>
-				<input type="radio" id="p-email" value="email">
+				<input type="radio" id="p-email" name="contact-method" value="email">
 				<label for="p-email">Email</label>
 			</fieldset>
 			<label for="user-state">State of Residence</label>
 			<select id="user-state" name="state" required>
-				<option value="please-select">-- Please select --</option>
+				<option value="please-select">------ Please select ------</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -84,7 +84,7 @@
 				<option value="OR">Oregon</option>
 				<option value="PA">Pennsylvania</option>
 				<option value="RI">Rhode Island</option>
-				<option value="SA">South Carolina</option>
+				<option value="SC">South Carolina</option>
 				<option value="SD">South Dakota</option>
 				<option value="TN">Tennessee</option>
 				<option value="TX">Texas</option>
