@@ -27,7 +27,7 @@
 		<article>
 			<h2>Coding Semantic and Accessible Forms!</h2>
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
-		<form method="GET" action="//wp.zybooks.com/form-viewer.php">
+		<form method="post" action="//wp.zybooks.com/form-viewer.php">
 			<label for="first-name">First Name
 				<span class="required">*</span>
 			</label>
@@ -44,11 +44,11 @@
 				<span class="required">*</span>
 			</label>
 			<input type="phone" id="user-phone" name="phone" required>
-			<fieldset>
+			<fieldset required>
 				<legend>Preferred Contact Method
 					<span class="required">*</span>
 				</legend>
-				<input type="radio" id="p-phone" name="contact-method" value="phone" required>
+				<input type="radio" id="p-phone" name="contact-method" value="phone">
 				<label for="p-phone">Phone</label>
 				<input type="radio" id="p-email" name="contact-method" value="email">
 				<label for="p-email">Email</label>
